@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student System | Home</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="/" class="logo">Student<span>Hub</span></a>
+
+    <nav>
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/students}">Students</a>
+        <a th:href="@{/about}">About</a>
+    </nav>
+</header>
+
+<main class="hero">
+    <div class="hero-content">
+        <p class="tag">WELCOME TO STUDENTHUB</p>
+
+        <h1>Manage Student Information<br>
+            <span>Simply & Easily.</span>
+        </h1>
+
+        <p class="description">
+            A simple student information system built with
+            Spring Boot, HTML and CSS.
+        </p>
+
+        <a class="btn" th:href="@{/students}">
+            View Students →
+        </a>
+    </div>
+
+    <div class="hero-card">
+        <div class="icon">🎓</div>
+        <h2>Student Portal</h2>
+        <p>Organize student information in one place.</p>
+
+        <div class="stat">
+            <span>Easy to use</span>
+            <span class="status">● Ready</span>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 StudentHub | Built with Spring Boot</p>
+</footer>
+
+</body>
+</html>

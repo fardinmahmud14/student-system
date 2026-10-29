@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students | StudentHub</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header class="navbar">
+    <a th:href="@{/}" class="logo">Student<span>Hub</span></a>
+    <nav>
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/students}">Students</a>
+        <a th:href="@{/about}">About</a>
+    </nav>
+</header>
+
+<main class="page-content">
+    <h1>Student Information</h1>
+    <p>Here is the list of our sample students.</p>
+
+    <table class="student-table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>ST-001</td>
+            <td>Rahim Ahmed</td>
+            <td>CSE</td>
+            <td>Active</td>
+        </tr>
+        <tr>
+            <td>ST-002</td>
+            <td>Karim Hasan</td>
+            <td>CSE</td>
+            <td>Active</td>
+        </tr>
+        <tr>
+            <td>ST-003</td>
+            <td>Nusrat Jahan</td>
+            <td>EEE</td>
+            <td>Active</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p style="margin-top: 25px;">
+        <a class="btn" th:href="@{/}">← Back to Home</a>
+    </p>
+</main>
+
+<footer>
+    <p>© 2026 StudentHub</p>
+</footer>
+
+</body>
+</html>
